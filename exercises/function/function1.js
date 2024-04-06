@@ -6,7 +6,7 @@
 //
 
 // I AM NOT DONE
-import {run_if_main} from "../../src/utils/runner.js"
+import { run_if_main } from "../../src/utils/runner.js"
 
 "use strict"
 
