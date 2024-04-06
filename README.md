@@ -49,3 +49,18 @@ cat exercises/variable/variable1.md
 - [variable](exercises/variable)
 - [function](exercises/function)
 - [if](exercises/if)
+
+## What am I opinionated about?
+
+- [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
+Paradigm first, which means I probably won't even use control flow statements
+(except `if` and `else`), and encourage the using of `map`, `filter`, `reduce`,
+etc. Emphasizing the immutability of data and the use of pure functions.
+- [Type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+first.  Every function should have type annotation with
+[JSDoc](https://jsdoc.app/).  Type safety is introduced early and emphasized.
+Although no [TypeScript](https://www.typescriptlang.org/) should be used since
+I don't want to involve any compilation/preprocessing.
+- Self-contained exercises. No external dependencies are needed to run the exercises.
+You just type `node <exercise>`. I know it might cause the duplication of helper functions
+but it's a good trade off to keep the execution simple (until modules are necessary)
