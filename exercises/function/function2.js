@@ -4,6 +4,7 @@
 
 // I AM NOT DONE
 import { range } from "../../src/utils/range.js"
+import { run_if_main } from "../../src/utils/runner.js"
 
 "use strict"
 
@@ -30,4 +31,4 @@ const main = () => {
   call_me()
 }
 
-main()
+run_if_main(import.meta, main)

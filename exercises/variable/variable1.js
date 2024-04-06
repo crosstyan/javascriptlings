@@ -3,6 +3,7 @@
 // Run the code and observe the error.
 
 // I AM NOT DONE
+import { run_if_main } from "../../src/utils/runner.js"
 "use strict"
 
 const main = () => {
@@ -10,4 +11,4 @@ const main = () => {
   console.log(`x has the value ${x}`)
 }
 
-main()
+run_if_main(import.meta, main)

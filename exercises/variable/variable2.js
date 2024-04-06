@@ -3,6 +3,7 @@
 // Run the code and observe the error.
 
 // I AM NOT DONE
+import { run_if_main } from "../../src/utils/runner.js"
 "use strict"
 
 function main() {
@@ -23,4 +24,4 @@ function main() {
   }
 }
 
-main()
+run_if_main(import.meta, main)

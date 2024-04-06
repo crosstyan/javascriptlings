@@ -5,7 +5,7 @@
 
 // I AM NOT DONE
 import { assert, assertEqual } from "../../src/utils/assertion.js"
-import { fileURLToPath } from "url"
+import { run_if_main } from "../../src/utils/runner.js"
 
 "use strict"
 /**
@@ -40,9 +40,6 @@ function main() {
   assertEqual(bigger(42, 42), 42, "forty two is equal to forty two")
 }
 
-export { main, bigger, assert, assertEqual }
+export { bigger, assert, assertEqual }
 
-// https://stackoverflow.com/questions/34842738/if-name-main-equivalent-in-javascript-es6-modules
-if (process.argv[1] === fileURLToPath(import.meta.url)){
-  main()
-}
+run_if_main(import.meta, main)

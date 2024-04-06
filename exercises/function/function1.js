@@ -6,10 +6,12 @@
 //
 
 // I AM NOT DONE
+import {run_if_main} from "../../src/utils/runner.js"
+
 "use strict"
 
 const main = () => {
   call_me()
 }
 
-main()
+run_if_main(import.meta, main)
