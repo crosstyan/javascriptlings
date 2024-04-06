@@ -1,8 +1,6 @@
 // functions2.js
 //
 // Run the code and observe the error.
-// Use the following command for a hint:
-// "Run with hint functions2"
 
 // I AM NOT DONE
 "use strict"
