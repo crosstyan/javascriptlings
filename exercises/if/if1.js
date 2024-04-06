@@ -5,6 +5,21 @@
 
 // I AM NOT DONE
 
+/**** Helper Functions DO NOT MODIFY ****/
+
+/**
+ * @summary - An error that is thrown when an assertion fails.
+ */
+class AssertionError extends Error {
+  /**
+   * @param {string} message 
+   */
+  constructor(message) {
+    super(message)
+    this.name = "AssertionError"
+  }
+}
+
 /**
  * @summary - Asserts that a condition is true.
  * @param {boolean} condition - The condition to check.
@@ -12,7 +27,7 @@
  */
 const assert = (condition, message) => {
   if (!condition) {
-    throw new Error(message)
+    throw new AssertionError(message)
   }
 }
 
@@ -26,6 +41,8 @@ const assert = (condition, message) => {
 const assertEqual = (actual, expected, message) => {
   assert(actual === expected, `${message} lhs=${actual} rhs=${expected}`)
 }
+
+/*** End of Helper Functions ***/
 
 /**
  * Returns the bigger number between a and b.
