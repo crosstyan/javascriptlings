@@ -46,9 +46,31 @@ cat exercises/variable/variable1.md
 
 ## The order of the exercises
 
-- [variable](exercises/variable)
-- [function](exercises/function)
-- [if](exercises/if)
+- [x] [variable](exercises/variable)
+- [x] [function](exercises/function)
+- [x] [if](exercises/if)
+- [ ] types and type notation
+- [ ] module, including [CommonJS](https://en.wikipedia.org/wiki/CommonJS) (just
+mention the history of it and how to identify one) and [ES6
+module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [ ] array (map, filter, reduce) might include a bit of `for of` loop (but you
+can always use `forEach`) and intentionally leave out traditional C like `for`
+loop. [Spread
+operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) and [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) should be included.
+- [ ] a taste of recursion (inspired by [the little schemer](https://mitpress.mit.edu/books/little-schemer))
+- [ ] function revisited (currying, partial application, higher order function and closure)
+- [ ] object (how do I define an dataclass/struct like object in JavaScript?
+Preferably immutable) Intentionally leave out `class` syntax (we don't need it
+as long as we have the type definition) 
+- [ ] async (callback, promise, async/await)
+
+## Beyond the language
+
+- [ ] package manager (`npm` and `corepack`)
+- [ ] bundler (`esbuild`)
+- [ ] [TypeScript](https://www.typescriptlang.org/) should be easy if `JSDoc` is actively used
+- [ ] frontend dev server (`vite`)
+- [ ] DOM manipulation (vanilla JS)
 
 ## What am I opinionated about?
 
@@ -60,7 +82,12 @@ etc. Emphasizing the immutability of data and the use of pure functions.
 first.  Every function should have type annotation with
 [JSDoc](https://jsdoc.app/).  Type safety is introduced early and emphasized.
 Although no [TypeScript](https://www.typescriptlang.org/) should be used since
-I don't want to involve any compilation/preprocessing.
-- Self-contained exercises. No external dependencies are needed to run the exercises.
-You just type `node <exercise>`. I know it might cause the duplication of helper functions
-but it's a good trade off to keep the execution simple (until modules are necessary)
+I don't want to involve any compilation/preprocessing. (might be a good idea to use [ts-node](https://www.npmjs.com/ts-node) though)
+
+## Note for myself
+
+```bash
+node  --import ./exercises/if/if1.js
+```
+
+> alternatively use dynamic import: `const { main } = await import("./exercises/if/if1.js")`
