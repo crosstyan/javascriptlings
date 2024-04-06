@@ -14,9 +14,9 @@ git clone https://github.com/crosstyan/javascriptlings.git
 
 ### Install a JavaScript Runtime
 
-Install a JavaScript runtime like [Node.js] (I believe that [Deno](https://deno.com/) and [Bum](https://bun.sh/) also work, although I haven't tested them):
+Install a JavaScript runtime like [Node.js](https://nodejs.org) (I believe that [Deno](https://deno.com/) and [Bum](https://bun.sh/) also work, although I haven't tested them):
 
-I'm assuming we're using [Node.js] for now.
+I'm assuming we're using [Node.js](https://nodejs.org) for now.
 
 ### Run the Exercises
 
