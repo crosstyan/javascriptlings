@@ -1,4 +1,4 @@
-The error you're encountering in `functions3.js` is due to calling `call_me()`
+The error you're encountering in `function3.js` is due to calling `call_me()`
 without providing the required `num` parameter, which leads to a `TypeError`
 because the function expects a number. Since the instruction specifies not to
 change the function call (`call_me()`), the solution involves adjusting the
@@ -35,13 +35,13 @@ handles missing or extra arguments.
 - **Fixed Arity:** A function with fixed arity expects a specific number of
 arguments. If the function is called with a different number of arguments than
 what is defined, it can lead to errors or unexpected behavior. In the case of
-`functions2.js`, the `call_me` function has a fixed arity of 1, as it expects a
+`function3.js`, the `call_me` function has a fixed arity of 1, as it expects a
 single `num` parameter.
 
 - **Variadic Functions:** JavaScript also supports variadic functions, which can
 accept a variable number of arguments. These functions use the `arguments`
 object or rest parameters (`...args`) to handle a flexible number of arguments.
-However, in the context of `functions2.js`, the goal is to modify the function
+However, in the context of `function3.js`, the goal is to modify the function
 signature without changing its implementation, so variadic functions are not
 applicable here.
 
@@ -50,7 +50,7 @@ with fewer arguments than expected, the missing arguments are assigned the value
 `undefined`. This is why the `call_me` function currently throws a `TypeError`
 when called without an argument - it checks for `undefined` and throws an error.
 
-To address the issue in `functions2.js`, consider how you can modify the
+To address the issue in `function3.js`, consider how you can modify the
 function signature to handle the case where `num` is not provided, while still
 maintaining the function's arity and its expected behavior. Reflect on how
 default parameters, as mentioned in the previous hint, can be used to achieve
