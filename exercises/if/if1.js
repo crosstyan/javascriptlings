@@ -40,6 +40,4 @@ function main() {
   assertEqual(bigger(42, 42), 42, "forty two is equal to forty two")
 }
 
-export { bigger, assert, assertEqual }
-
 run_if_main(import.meta, main)

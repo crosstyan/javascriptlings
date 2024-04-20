@@ -84,10 +84,6 @@ first.  Every function should have type annotation with
 Although no [TypeScript](https://www.typescriptlang.org/) should be used since
 I don't want to involve any compilation/preprocessing. (might be a good idea to use [ts-node](https://www.npmjs.com/ts-node) though)
 
-## Note for myself
+## See also
 
-```bash
-node  --import ./exercises/if/if1.js
-```
-
-> alternatively use dynamic import: `const { main } = await import("./exercises/if/if1.js")`
+- [JSDoc Reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
